@@ -1,10 +1,19 @@
 # Meu-primeiro-projeto
-class Pessoa:
-    def __init__(self, nome):
-        self.nome = nome
+a=10
+b=2
+
+def somar(a, b):
+    return a + b
+
+def subtrair(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Divisão por zero não é permitida.")
+    return a / b
     
-    def saudar(self):
-        print(f"Olá,{self.nome}.")
-        
-pessoa1= Pessoa("Elisa")
-pessoa1.saudar()
+print(f"divisão: {dividir}")
